@@ -94,3 +94,16 @@ button:active {
   border: #333;
   border-radius: black 5px;
 }
+
+p {
+  font-size: 35px;
+  justify-content: baseline;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #496b89;
+}
