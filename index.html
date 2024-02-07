@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Un encriptador de mensajes para evitar que te espien, con ayuda de tecnologia de ultima punta!">
+    <meta name="keywords" content="encriptador, mensajes, mensajes encriptados, secretos, mensajes secretos">
+    <link rel="shortcut icon" href="/img/logo-encriptador.png" type="image/x-icon">>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+
+    <header>
+        <img id="img-header" src="/img/logo-encriptador.png" width="80px" height="80px" alt="">
+        <h1 class="titulo-header">Encriptador</h1>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <textarea id="textoInput" placeholder="Ingrese un texto"></textarea>
+            <textarea id="textoOutput" readonly></textarea>
+        </div>
+
+        <div class="contenedor">
+            <button onclick="encriptar()">Encriptar</button>
+            <button onclick="desencriptar()">Desencriptar</button>
+        </div>
+
+        <div class="contenedor">
+            <button onclick="copiarAlPortapapeles()">Copiar al Portapapeles</button>
+            <button id="borrarTexto" onclick="borrarTexto()">X</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Información de pie de página</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
